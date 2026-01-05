@@ -7,9 +7,9 @@ router.post("/", async (req, res) => {
   res.json(sellerProduct);
 });
 
-// router.get("/" , (req ,res)=>{
-//     res.json("hello be");
-// })
+ router.get("/info" , (req ,res)=>{
+    res.json("hello be");
+ })
 
 router.get("/" , async(req , res)=>{
   const all = await SellerProduct.find();
